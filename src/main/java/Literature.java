@@ -6,7 +6,7 @@ public abstract class Literature extends Item implements IDisplayable, ISellable
     }
 
     public String displayItemInWindow(String label) {
-        return "BOOKS,MAGS,CDS,MUSIC SHEETS ON SALE";
+        return label;
     }
 
     public double calculateMarkUp() {

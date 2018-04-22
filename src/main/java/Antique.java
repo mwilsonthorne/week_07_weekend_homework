@@ -15,4 +15,6 @@ public class Antique extends MusicalInstrument implements IDisplayable {
     public String displayItemInWindow(String label) {
         return label;
     }
+
+
 }

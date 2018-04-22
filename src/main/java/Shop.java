@@ -1,6 +1,8 @@
+
+
 import java.util.ArrayList;
 
-public class Shop {
+public class Shop implements ISellable, IDisplayable{
 
     private ArrayList<IDisplayable> window;
     private ArrayList<ISellable> stock;
@@ -32,5 +34,23 @@ public class Shop {
 
     public void removeStock(ISellable item){
         this.stock.remove(item);
+    }
+
+    public ArrayList<IDisplayable> getWindow() {
+        return this.window;
+    }
+
+    public ArrayList<ISellable> getStock() {
+        return this.stock;
+    }
+
+    @Override
+    public double calculateMarkUp() {
+        return 0;
+    }
+
+    @Override
+    public String displayItemInWindow(String label) {
+        return null;
     }
 }
